@@ -1,0 +1,161 @@
+/* About Section - Tech-Inspired Design */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    animation: fadeIn 1s ease-in-out;
+    margin-top: 6.3rem;
+    margin-bottom: auto;
+    padding: 3rem;
+    width: 90%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(10, 10, 10, 0.9);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(2px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.about:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+}
+
+/* Text Section */
+.aboutText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    flex: 1;
+}
+
+/* Title Styling */
+.aboutText h1 {
+    font-size: 43px;
+    color: #ec8f84;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 5px;
+    width: fit-content;
+    font-family: "wire one";
+}
+
+/* Paragraph Styling */
+.aboutText p {
+    font-size: 14px;
+    color: #fff;
+    text-align: justify;
+    padding-top: 1rem;
+    line-height: 1.6;
+    opacity: 0.9;
+    font-family: "public sans";
+    font-weight: 200;
+}
+
+/* Button Styling */
+.aboutText .btn {
+    color: #ec8f84;
+    border: 1px solid #ec8f84;
+    font-size: 14px;
+    font-weight: 200;
+    border-radius: 1px;
+    margin-top: 1.5rem;
+    padding: 0.5rem 1.3rem;
+    width: fit-content;
+    transition: all 0.3s ease-in-out;
+    font-family: "public sans";
+}
+
+.aboutText .btn:hover {
+    background: #ec8f84;
+    color: #fff;
+    transform: scale(1.07);
+    box-shadow: 0 0 12px rgba(236, 143, 132, 0.8);
+}
+
+/* Image Section */
+.aboutPhoto {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutPhoto img {
+    width: 320px;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid rgba(255, 255, 255, 0.1);
+    transition: border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.aboutPhoto img:hover {
+    background: #ec8f84;
+    color: #fff;
+    transform: scale(1.07);
+    box-shadow: 0 0 12px rgba(236, 143, 132, 0.8);
+  }
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 800px) {
+    .about {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        padding: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .about .row {
+        flex-direction: column;
+    }
+
+    .aboutPhoto {
+        order: -1; /* Moves the photo to the top */
+        margin-left: 0;
+        margin-bottom: 1.5rem;
+        display: flex;
+        justify-content: center; /* Centers the image */
+        width: 100%; /* Ensures full width for proper centering */
+    }
+
+    .aboutPhoto img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .aboutText p {
+        font-size: 14px; /* Slightly larger for better readability */
+        
+    }
+
+    .aboutText {
+        width: 100%;
+        text-align: center !important;
+    }
+    
+    
+    .aboutText h1 {
+        margin: 0;
+        display: block;
+        text-align: center!important; /* Centers text inside h1 */
+    }
+    
+    .aboutText .btn {
+        width: 60%;
+        display: block;
+        margin: 0 auto; /* Centers the button */
+        text-align: center; /* Only needed if the button has inline content */
+    }
+    
+}
