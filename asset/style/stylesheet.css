@@ -111,7 +111,11 @@
       /*z-index: 1000;  Ensure it's above other content */
   }
   .bi-list {
-    font-size: 26px!important; 
+    font-size: 21px!important; 
+    border-radius: 6px;
+    border: 2px solid #ffffff54;
+    padding-left:  5px;
+    padding-right: 5px;
   }
 }
   nav li{

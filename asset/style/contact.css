@@ -8,14 +8,6 @@
     height: 100vh; /* Full viewport height or adjust as needed */
 }
 
-.dark-background {
-    --background-color: #060606;
-    --default-color: #ffffff;
-    --heading-color: #ffffff;
-    --surface-color: #252525;
-    --contrast-color: #ffffff;
-}
-
 .transparent-background {
     --background-color: rgba(255, 255, 255, 0.877);
     --surface-color: rgba(255, 255, 255, 0);
@@ -34,6 +26,15 @@
     border-radius: 10px;
     text-align: center; /* Center text horizontally */
     animation: fadeIn 1s ease-in-out; /* Fade-in animation for the container */
+    
+}
+@media (max-width: 768px) {
+    .contact .container {
+        width: 100%;
+    }
+    .contact .section-title{
+        margin-top: -4rem;
+    }
 }
 
 @keyframes fadeIn {
@@ -51,11 +52,17 @@
     background-color: rgba(0, 0, 0, 0.75); /* Adjusted Opacity */
     box-shadow: 0 4px 8px rgb(0, 0, 0);
     padding: 30px;
-    height: 100%;
-    width: auto;
+    width: 100%;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
-
+@media (max-width: 768px) {
+    .contact .info-item {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+}
 .contact .info-item:hover {
     transform: translateY(-5px); /* Lift the item on hover */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
@@ -187,4 +194,49 @@
 
 .contact .php-email-form button[type=submit]:active {
     transform: scale(0.95); /* Slightly shrink on click */
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    .parent {
+        height: auto; /* Adjust height for smaller screens */
+        padding: 40px 20px; /* Ensures better spacing */
+    }
+
+    .contact .container {
+        width: 100%;
+    }
+
+    .contact .info-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact .info-item {
+        width: 90%;
+    }
+
+    .contact .php-email-form input,
+    .contact .php-email-form textarea {
+        width: 100%; /* Ensure inputs fit smaller screens */
+    }
+
+    .section-title h2 {
+        font-size: 28px; /* Adjust heading size */
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contact .container {
+        padding: 15px;
+    }
+
+    .contact .info-item {
+        padding: 15px;
+    }
+
+    .contact .php-email-form button {
+        font-size: 14px;
+        padding: 10px 25px;
+    }
 }

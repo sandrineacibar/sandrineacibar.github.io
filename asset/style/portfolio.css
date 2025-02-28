@@ -12,6 +12,9 @@
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
+#containerPortfolio{
+  padding: 2rem;
+}
 .section-heading h2{
   font-family: "wire one", sans-serif!important;
   text-transform: u;
@@ -41,7 +44,7 @@
 #portfolio .portfolio-item img {
   width: 350px;
   height: 300px;
-  border-radius: 5px;
+  border-radius: 0px;
 }
 /* Blinking Star Animation */
 @keyframes blinkStars {
@@ -63,8 +66,9 @@
 /*new*/
 #portfolio .portfolio-item {
   max-width: 26rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 2rem ;
   overflow: hidden;
   opacity: 0;
   transform: translateY(30px);
@@ -360,9 +364,9 @@
  /* Close Button */
  .portfolio-modal .bi-x-lg{
   position: absolute;
-  top: 1rem;
-  right: 1.5rem;
-  font-size: 28px;
+  top: 1.5rem;
+  right: 3.5rem;
+  font-size: 38px;
   cursor: pointer;
   color: #ff7675;
   transition: opacity 0.3s ease-in-out, transform 0.2s;
@@ -461,6 +465,15 @@
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   border-top: none;
   padding-top: 2rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.certificate-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 2rem;
 }
 
 .certificate-section h2 {
@@ -519,6 +532,7 @@
   .certificate-section {
     padding: 1rem 1rem;
     margin-top: 2rem;
+    width: 100%;
   }
 
   .certificate-section h2 {
@@ -526,7 +540,7 @@
   }
 
   .certificate-container {
-    width: 100%;    
+    width: 100%;  
   }
 
   .certificate-card img {

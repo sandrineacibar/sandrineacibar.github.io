@@ -182,7 +182,7 @@ footer .bi-chevron-double-up:hover {
 
     #resume {
         width: 100%;
-        padding: 1rem;
+        padding: 2rem;
     }
     
     #resume h1 {
@@ -264,7 +264,6 @@ Bar Graph
     backdrop-filter: blur(2px);
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-
   }
   
   /* Title Animation */
@@ -377,7 +376,7 @@ Bar Graph
     }
     #resumeModal .modal-content h2 {
         font-size: 35px;
-        margin-bottom: -3rem;
+        margin-bottom: -1rem;
     }
     #resumeModal .modal-content p {
         font-size: 14px;
@@ -444,11 +443,18 @@ Bar Graph
         margin-top: 0;
         margin-bottom: 0;
     }
+    .cv-image:hover{
+        transform: none;
+        transition: none;
+    }
+
 }
 
 @media (max-width: 480px) {
     .cv-image {
         max-width: 100%;
+        transform: none;
+        transition: none;
     }
 }
 /* Icon Groove Animation */
