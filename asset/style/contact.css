@@ -317,3 +317,13 @@
         font-size: 0.9rem;
     }
 }
+
+.hidelist{
+    position: relative; /* Remove fixed positioning */
+    height: auto; /* Allow content to flow */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    text-align: center;
+}
