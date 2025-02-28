@@ -137,11 +137,11 @@
   }
   
   
-   li:first-child{
+  nav li:first-child{
     margin-right: auto;
    }
    @media (max-width: 768px) {
-    li:first-child{
+  nav li:first-child{
       font-size: 35px;
       margin-left: -3rem;
     }
@@ -201,6 +201,11 @@
   background-color: #000;
   position: fixed;
   right: 0%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center items horizontally */
+  text-align: center;
+  min-height: 100%;
 }
 
 @media (max-width: 768px) {
@@ -214,19 +219,10 @@
   }
 }
 
-.colsecond {
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Center items horizontally */
-  text-align: center;
-  min-height: 100%;
-  }
-
 /*Profile image styling */
 .profile {
   width: 140px;
-  height: 140
-  px;
+  height: 140px;  
   border-radius: 50%;
   object-fit: cover;
   margin-top: 38px;
@@ -271,18 +267,15 @@
   transition: all 0.3s ease-in-out; /* Smooth transition */
 }
 
-/* Social media icons */
+/* Social media icons*/
 .colsecond ul {
   list-style: none;
   padding: 0;
   display: flex;
+  justify-content: center;
   gap: 7px;
   margin: 7px 0;
   font-family: "Bahnschrift", sans-serif;
-}
-
-.colsecond ul li {
-  display: inline-block;
 }
 
 /* Social media links */
@@ -294,11 +287,9 @@
   width: 39px;
   text-decoration: none;
   font-size: 14px;
-  padding: 0px;
   transition: all 0.3s ease-in-out;
   border: 2px solid color-mix(in srgb, var(--default-color), transparent 50%);
   border-radius: 50%;
-  font-family: "Bai Jamjuree", sans-serif;
 
 }
 
@@ -316,15 +307,6 @@ hr {
   margin-bottom: 0;
   border: 1px solid #ccc;
 }
-
-/* Contact info
-.colsecond p {
-  font-family: "wire one", sans-serif;
-  margin: .01%;
-  font-size: 0.70rem;
-  font-weight: 200;
-  color: #f0f0f0;
-} */
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
@@ -351,16 +333,25 @@ hr {
       font-size: 10px;
   }
 }
-@media (min-width: 1024px) {
-  .container {
-      height: auto;
-      align-items: flex-start;
-      justify-content: flex-start;
-      text-align: left;
+@media (max-width: 768px) {
+  .colsecond {
+      position: relative; /* Remove fixed positioning */
+      width: 100%; /* Full width */
+      height: auto; /* Allow content to flow */
+      min-height: 100vh; /* Take full height */
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center horizontally */
+      justify-content: center; /* Center vertically */
+      text-align: center;
   }
 
-  .social-links {
-      justify-content: flex-start;
+  .colsecond ul {
+      display: flex;
+      justify-content: center; /* Center the list */
+      width: 40%;
+      padding: 0;
+      
   }
 }
 
@@ -602,13 +593,13 @@ HERO CARD SECTION
 /* Responsive Design */
 @media (max-width: 768px) {/*-----------------------------------------*/
   .hero {
-    margin-top: -3rem;
+    margin-top: -9rem;
   }
   .typing-text{
-    font-size: 35px;
+    font-size: 30px;
   }
   .movingText .me {
-    font-size: 35px;
+    font-size: 30px;
   }
   .hero .card {
     width: 100%;
@@ -620,7 +611,7 @@ HERO CARD SECTION
   }
 
   .hero .card h2 {
-    font-size: 30px!important;
+    font-size: 28px!important;
   }
 
   .hero .card h3 {
@@ -636,7 +627,7 @@ HERO CARD SECTION
   }
 }
 
-@media (max-width: 430px) {
+@media (max-width: 370) {
   .typing-text{
     font-size: 33px;
   }

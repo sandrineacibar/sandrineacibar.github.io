@@ -309,6 +309,14 @@ Bar Graph
     opacity: 0.5;
     transform: rotate(90deg);
 }
+@media (max-width: 780px) {
+ #resume .skills .bar-graph {
+    width: 80%;
+    max-width: 80px; /* Adjust as needed */
+    }
+}
+
+ 
 
   /* Button Animation */
  .modal-body .btn-xl {
@@ -350,7 +358,8 @@ Bar Graph
         padding: 2rem 1rem;
     }
     #resumeModal .modal-content h2 {
-        font-size: 30px;
+        font-size: 35px;
+        margin-bottom: -1rem;
     }
     #resumeModal .bi-x-lg {
         font-size: 24px;
@@ -367,7 +376,8 @@ Bar Graph
         padding: 1.5rem 1rem;
     }
     #resumeModal .modal-content h2 {
-        font-size: 24px;
+        font-size: 35px;
+        margin-bottom: -3rem;
     }
     #resumeModal .modal-content p {
         font-size: 14px;
@@ -475,4 +485,5 @@ Bar Graph
     transform: scale(1.1);
     animation: none;
 }
+
 
