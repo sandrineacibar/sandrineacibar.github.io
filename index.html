@@ -46,10 +46,9 @@
                                 <li><br></li>
                                 <li onclick=hideSidebar()><a href=""><i class="bi bi-x-lg"></i></a></li>
                                 <li ><a href="index.html">Home</a></li>
-                                <!--<li ><a href="#">About</a></li>-->
+                                <li ><a href="index.html#about">About</a></li>
+                                <li><a href="#certificate">Certificate</a></li>
                                 <li><a href="portfolio.html">Portfolio</a></li>
-                                <li><a href="#resume">Curriculum Vitae</a></li>
-                                <!--<li><a href="#">Services</a></li>-->
                                 <li><a href="contact.html">Contact</a></li>
 
                             </ul>
@@ -58,7 +57,7 @@
                                 <li class="hideOnMobile"><a href="#home">Home</a></li>
                                 <li class="hideOnMobile"><a href="#about">About</a></li>
                                 <li class="hideOnMobile "><a href="contact.html">Contact</a></li>              
-                                <li onclick="showSidebar()"class="hideIfNotMobile"><a href="#"><i class="bi bi-list"></i></a></li>
+                                <li onclick="showSidebar()"class="hideIfNotMobile"><i class="bi bi-list"></i></li>
                             </ul><!--class="d-flex flex-wrap list-unstyled mb-0"-->
                         </nav>
                     </div>
@@ -90,13 +89,17 @@
                     </div>
                      <!--End Hero-->    
                     <!--About Section-->
-                    <div id="about" class="container hidden-section">
-                        <div class="about" data-aos="fade-up" data-aos-delay="100" syle="">
+                    <div id="about" class="container hidden-section" data-aos="fade-up">
+                        <div class="about" data-aos="fade-up" data-aos-delay="1" syle="">
                             <div class="row">
                                 <div class="col-md-6 aboutText">
                                     <h1>About Me <i class="bi bi-bookmark-heart"></i></h1>
                                     <p>Hello! My is <span class="name">Sandrine Mae Acibar</span>. I am a dedicated college student specializing in Information Systems, passionate about driving process improvement and delivering innovative solutions. With a strong blend of technical expertise and creative problem-solving, I bridge the gap between technology and practical applications. My skills in Graphic Design, Front-End Development, Video Editing, and System Analysis allow me to approach projects from different perspectives and ensure smooth execution.</p>
-                                </div>
+                                    <a href="https://drive.google.com/uc?id=1-s6LVX9LahGk9PT3mPOlGVDNRkMrhB5T&export=download" class="btn">
+                                      <i class="bi bi-download"></i> Download My CV
+                                  </a>
+                                  </a>                                  
+                                  </div>
                                 <div class="col-md-6 aboutPhoto">
                                     <img src="asset/images/about.jpg" alt="photo">
                                 </div>
@@ -169,7 +172,7 @@
                                             <div class="bar" data-value="95"></div>
                                           </div>                       
                                 </div>
-                                <footer><a href="#top"><i class="bi bi-chevron-double-up "></i></a></footer>
+                                <!--<footer><a href="#top"><i class="bi bi-chevron-double-up "></i></a></footer>-->
                             </div>
                         </div>
                         <!--End Resume Section-->
@@ -196,7 +199,7 @@
                 <img src="asset/images/dictCert.jpg" alt="DICT Certificate" />
               </div>
             </div>
-            <footer><a href="#resume"><i class="bi bi-chevron-double-up "></i></a></footer>
+            <footer class="hideIfNotMobile"><a href="#top"><i class="bi bi-chevron-double-up "></i></a></footer>
           </div>
           <!--End certificate section-->
             </div>
@@ -225,10 +228,10 @@
                            Here`s my more detailed and personnal information
                         </p>
                         <div class="row image-row">
-                            <div class="col-md-6">
+                            <div class="col-12">
                                 <img src="asset/images/1.jpg" alt="image one" class="cv-image">
                             </div>
-                            <div class="col-md-6">
+                            <div class="col-12">
                                 <img src="asset/images/2.jpg" alt="image two" class="cv-image">
                             </div>
                         </div>                      

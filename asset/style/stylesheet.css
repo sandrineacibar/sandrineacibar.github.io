@@ -1,5 +1,10 @@
-/**{
-  outline: 1px solid red; /* Shows grid lines around all elements */
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
   :root { 
     --background-color: #ffffff; /* Background color for the entire website, including individual sections */
@@ -23,6 +28,19 @@
     backdrop-filter: blur(2px); /* Glassmorphism effect */
     transition: 1s;
   }
+  /* Splash Screen */
+.splash {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f8f9fa;
+}
+.splash img {
+  width: 80%;
+  max-width: 300px;
+}
+
   .logo-header{
     position: absolute;
     top: 40%;
@@ -104,6 +122,9 @@
     position: fixed;
     z-index: 999;
   }
+  nav ul{
+    padding-left: 0;
+  }
   /* Responsive Styles */
   @media (max-width: 768px) {
   nav ul{
@@ -114,8 +135,7 @@
     font-size: 21px!important; 
     border-radius: 6px;
     border: 2px solid #ffffff54;
-    padding-left:  5px;
-    padding-right: 5px;
+    margin-right: 1.5rem;
   }
 }
   nav li{
@@ -147,7 +167,6 @@
    @media (max-width: 768px) {
   nav li:first-child{
       font-size: 35px;
-      margin-left: -3rem;
     }
    }
 
@@ -597,7 +616,8 @@ HERO CARD SECTION
 /* Responsive Design */
 @media (max-width: 768px){/*-----------------------------------------*/
   .hero {
-    margin-top: -9rem;
+    margin-top: -6rem;
+    margin-bottom: -3rem;
   }
   .typing-text{
     font-size: 30px;
@@ -622,16 +642,16 @@ HERO CARD SECTION
     font-size: 13px;
   }
   .hero .card .btn-group {
-    width: 15%;
+    width: 15%!important;
   }
   .hero .btnOne, 
   .hero .btnTwo{
     font-size: 12px;
-    margin-right: 7px;
+    width: 100px!important;
   }
 }
 
-@media (max-width: 370) {
+@media (max-width: 470) {
   .typing-text{
     font-size: 33px;
   }
@@ -659,6 +679,41 @@ HERO CARD SECTION
   .hero .card .btnTwo {
     min-width: 90px; /* Reduce size further on very small screens */
     padding: 8px;
+  }
+}
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .navbar {
+      flex-direction: column;
+      text-align: center;
+  }
+  .navbar .menu {
+      flex-direction: column;
+      gap: 10px;
+  }
+  .hero h1 {
+      font-size: 2rem;
+  }
+  .hero p {
+      font-size: 1rem;
+  }
+  .hero img {
+      max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+      padding: 3rem 1rem;
+  }
+  .hero h1 {
+      font-size: 1.8rem;
+  }
+  .hero p {
+      font-size: 0.9rem;
+  }
+  .hero img {
+      max-width: 350px;
   }
 }
 

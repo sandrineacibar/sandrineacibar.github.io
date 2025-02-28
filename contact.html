@@ -36,10 +36,9 @@
                         <li><br></li>
                         <li onclick=hideSidebar()><a href=""><i class="bi bi-x-lg"></i></a></li>
                         <li ><a href="index.html">Home</a></li>
-                        <!--<li ><a href="#">About</a></li>-->
+                        <li ><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#about">Certificate</a></li>
                         <li><a href="portfolio.html">Portfolio</a></li>
-                        <li><a href="#">Curriculum Vitae</a></li>
-                        <!--<li><a href="#">Services</a></li>-->
                         <li><a href="contact.html">Contact</a></li>
 
                     </ul>
@@ -48,7 +47,7 @@
                         <li class="hideOnMobile"><a href="index.html">Home</a></li>
                         <li class="hideOnMobile"><a href="index.html#about">About</a></li>
                          <li class="hideOnMobile"><a href="contact.html">Contact</a></li>              
-                        <li onclick="showSidebar()"class="hideIfNotMobile" ><a href="#"><i class="bi bi-list"></i></a></li>
+                        <li onclick="showSidebar()"class="hideIfNotMobile" ><i class="bi bi-list"></i></li>
                     </ul><!--class="d-flex flex-wrap list-unstyled mb-0"-->
                 </nav>
                 <!--End Navigation-->
@@ -64,9 +63,9 @@
 
                             <div class="container" data-aos="fade-up" data-aos-delay="100">
                                 <div class="row gy-4">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-12 hideOnMobile">
                                         <div class="row gy-4">
-                                            <div class="col-md-6">
+                                            <div class="col-md-3 contactBar">
                                                 <div class="info-item" data-aos="fade" data-aos-delay="200">
                                                     <i class="bi bi-geo-alt"></i>
                                                     <h3>Address</h3>
@@ -76,7 +75,7 @@
                                             </div>
                                             <!-- End Info Item -->
 
-                                            <div class="col-md-6">
+                                            <div class="col-md-3">
                                                 <div class="info-item" data-aos="fade" data-aos-delay="300">
                                                     <i class="bi bi-telephone"></i>
                                                     <h3>Call Me</h3>
@@ -86,91 +85,160 @@
                                             </div>
                                             <!-- End Info Item -->
 
-                                            <div class="col-md-6">
+                                            <div class="col-md-3">
                                                 <div class="info-item" data-aos="fade" data-aos-delay="400">
                                                     <i class="bi bi-envelope"></i>
                                                     <h3>Email Me</h3>
-                                                    <p>acibar@gmail.com</p>
+                                                    <p>sandrinecibar@gmail.com</p>
                                                     <p></p>
                                                 </div>
                                             </div>
                                             <!-- End Info Item -->
 
-                                            <div class="col-md-6">
+                                            <div class="col-md-3">
                                                 <div class="info-item" data-aos="fade" data-aos-delay="500">
                                                     <i class="bi bi-clock"></i>
-                                                    <h3>Open Hours</h3>
+                                                    <h3>I`m available</h3>
                                                     <p>Monday - Friday</p>
-                                                    <p>9:00AM - 05:00PM</p>
+                                                    <p>9:00AM - 5:00PM</p>
                                                 </div>
                                             </div>
                                             <!-- End Info Item -->
+
+                                            <div class="col-md-3">
+                                                <div class="info-item" data-aos="fade" data-aos-delay="500">
+                                                    <a href="https://www.facebook.com/sandrine.acibar/"><i class="bi bi-facebook"></i></a>
+                                                    
+                                                    <h3>Facebook</h3>
+                                                    
+                                                </div>
+                                            </div>
+                                            <!-- End Info Item -->
+
+                                            <div class="col-md-3">
+                                                <div class="info-item" data-aos="fade" data-aos-delay="500">
+                                                    <a href="https://www.instagram.com/sandrine_mae/"><i class="bi bi-instagram"></i></a>
+                                                    <h3>Instagram</h3>
+                                                </div>
+                                            </div>
+                                            <!-- End Info Item -->
+
+                                            <div class="col-md-3">
+                                                <div class="info-item" data-aos="fade" data-aos-delay="500">
+                                                    <a href="https://x.com/MaeSandrine"><i class="bi bi-twitter-x"></i></a>
+                                                    <h3>Twitter-X</h3>
+                                                </div>
+                                            </div>
+                                            <!-- End Info Item -->
+
+                                            <div class="col-md-3">
+                                                <div class="info-item" data-aos="fade" data-aos-delay="500">
+                                                    <a href="https://github.com/sandrineacibar"><i class="bi bi-clock"></i></a>
+                                                    <h3>Github</h3>
+                                                </div>
+                                            </div>
+                                            <!-- End Info Item -->
+
                                         </div>
                                     </div>
 
-                                    <div class="col-lg-6">
-                                    <form
-                                        action="forms/contact.php"
-                                        method="post"
-                                        class="php-email-form"
-                                        data-aos="fade-up"
-                                        data-aos-delay="200"
-                                    >
-                                        <div class="row gy-4">
-                                        <div class="col-md-6">
-                                            <input
-                                            type="text"
-                                            name="name"
-                                            class="form-control"
-                                            placeholder="Your Name"
-                                            required=""
-                                            />
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <input
-                                            type="email"
-                                            class="form-control"
-                                            name="email"
-                                            placeholder="Your Email"
-                                            required=""
-                                            />
-                                        </div>
-
-                                        <div class="col-12">
-                                            <input
-                                            type="text"
-                                            class="form-control"
-                                            name="subject"
-                                            placeholder="Subject"
-                                            required=""
-                                            />
-                                        </div>
-
-                                        <div class="col-12">
-                                            <textarea
-                                            class="form-control"
-                                            name="message"
-                                            rows="6"
-                                            placeholder="Message"
-                                            required=""
-                                            ></textarea>
-                                        </div>
-
-                                        <div class="col-12 text-center">
-                                            <div class="loading"></div>
-                                            <div class="error-message"></div>
-                                            <div class="sent-message">
-                                              
+                                    <div id="contactOnlyinMobile" class="contactOnlyinMobile hideIfNotMobile" >
+                                        <div class="row hideIfNotMobile">
+                                            <div class="col-6 sm-4 education">
+                                                <h1><i class="bi bi-geo-alt"></i> Address </h1>
+                                                <ul>
+                                                    <li class="indent">P-1 Taguibo</li>
+                                                    <li class="indent">Butuan City</li>
+                                                    <li class="indent">8600, Philippines</li>
+                                                </ul>
                                             </div>
-                                                <button type="submit">Send Message</button>
+                                            <div class="col-6 sm-4 training">
+                                                <h1><i class="bi bi-telephone"></i> Call Me </h1>
+                                                <ul>
+                                                    <li class="indent">09517978870</li>
+                                                    <li class="indent">09309621111</li>
+                                                </ul>              
                                             </div>
+                                            <div class="col-6 sm-4 experience">
+                                                <h1><i class="bi bi-envelope"></i> Email me </h1>
+                                                <ul>
+                                                    <li class="indent">sandrineacibar@gmail.com</li>
+                                                </ul>
+                                            </div>  
+                                            <div class="col-6 skills">
+                                                <h1><i class="bi bi-clock"></i> I`m available </h1>
+                                                <ul>
+                                                    <li class="indent">Monday - Friday</li>
+                                                    <li class="indent">9:00AM - 5:00PM</li>
+                                                </ul>                 
+                                            </div>
+                                            <!--<footer><a href="#top"><i class="bi bi-chevron-double-up "></i></a></footer>-->
                                         </div>
-                                    </form>
-                                </div>
-                                <!-- End Contact Form -->
+                                    </div>
+                                    <!--End Resume Section-->
+                                       <!-- <div class="col-lg-6">
+                                        <form
+                                            action="forms/contact.php"
+                                            method="post"
+                                            class="php-email-form"
+                                            data-aos="fade-up"
+                                            data-aos-delay="200"
+                                        >
+                                            <div class="row gy-4">
+                                            <div class="col-md-6">
+                                                <input
+                                                type="text"
+                                                name="name"
+                                                class="form-control"
+                                                placeholder="Your Name"
+                                                required=""
+                                                />
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <input
+                                                type="email"
+                                                class="form-control"
+                                                name="email"
+                                                placeholder="Your Email"
+                                                required=""
+                                                />
+                                            </div>
+
+                                            <div class="col-12">
+                                                <input
+                                                type="text"
+                                                class="form-control"
+                                                name="subject"
+                                                placeholder="Subject"
+                                                required=""
+                                                />
+                                            </div>
+
+                                            <div class="col-12">
+                                                <textarea
+                                                class="form-control"
+                                                name="message"
+                                                rows="6"
+                                                placeholder="Message"
+                                                required=""
+                                                ></textarea>
+                                            </div>
+
+                                            <div class="col-12 text-center">
+                                                <div class="loading"></div>
+                                                <div class="error-message"></div>
+                                                <div class="sent-message">
+                                                
+                                                </div>
+                                                    <button type="submit">Send Message</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                End Contact Form -->
                             </div>
-                        </div>/
+                        </div>
                     </div>
                 </div>
                 <!-- /Contact Section -->
@@ -183,12 +251,6 @@
                 <h1 class="pb-2">Sandrine Mae Acibar</h1>
                 <h2>Graphic Designer</h2>
                 <h2 class="pb-4">Frontend Developer</h2>
-                <ul>
-                    <li><a href="https://www.facebook.com/sandrine.acibar/"><i class="bi bi-facebook"></i></a></li>
-                    <li><a href="https://x.com/MaeSandrine  "><i class="bi bi-twitter-x"></i></a></li>
-                    <li><a href="https://www.instagram.com/sandrine_mae/"><i class="bi bi-instagram"></i></a></li>
-                    <li><a href="https://github.com/sandrinemae19"><i class="bi bi-github"></i></a></li>
-                </ul>
             
 
                 <hr>
@@ -331,6 +393,22 @@
 
             window.addEventListener("scroll", revealSections);
         });
+
+        //email
+        function sendEmail(event) {
+            event.preventDefault(); // Prevent form submission
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let subject = document.getElementById("subject").value;
+            let message = document.getElementById("message").value;
+
+            let mailtoLink = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+                `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+            )}`;
+
+            window.location.href = mailtoLink;
+        }
 
     </script>
 

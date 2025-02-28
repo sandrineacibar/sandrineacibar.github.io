@@ -26,14 +26,18 @@
     border-radius: 10px;
     text-align: center; /* Center text horizontally */
     animation: fadeIn 1s ease-in-out; /* Fade-in animation for the container */
-    
 }
 @media (max-width: 768px) {
     .contact .container {
         width: 100%;
+
     }
     .contact .section-title{
         margin-top: -4rem;
+        margin-bottom: 3.1rem;
+    }
+    .info-item1{
+        width: 100%;
     }
 }
 
@@ -51,8 +55,9 @@
 .contact .info-item {
     background-color: rgba(0, 0, 0, 0.75); /* Adjusted Opacity */
     box-shadow: 0 4px 8px rgb(0, 0, 0);
-    padding: 30px;
     width: 100%;
+    height: 100%;
+    padding: 30px;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
 }
 @media (max-width: 768px) {
@@ -61,7 +66,6 @@
         margin: 0;
         padding: 0;
     }
-    
 }
 .contact .info-item:hover {
     transform: translateY(-5px); /* Lift the item on hover */
@@ -74,6 +78,12 @@
     color: #ff978c;
     animation: bounce 2s infinite; /* Bounce animation for the icon */
 }
+.contact.info-item a i:hover {
+    background: #ec8f84;
+    color: #fff;
+    transform: scale(1.07);
+    box-shadow: 0 0 12px rgba(236, 143, 132, 0.8);
+  }
 
 @keyframes bounce {
     0%, 100% {
@@ -201,7 +211,6 @@
         height: auto; /* Adjust height for smaller screens */
         padding: 40px 20px; /* Ensures better spacing */
     }
-
     .contact .container {
         width: 100%;
     }
@@ -227,10 +236,6 @@
 }
 
 @media (max-width: 480px) {
-    .contact .container {
-        padding: 15px;
-    }
-
     .contact .info-item {
         padding: 15px;
     }
@@ -238,5 +243,77 @@
     .contact .php-email-form button {
         font-size: 14px;
         padding: 10px 25px;
+    }
+    .contact .container {
+        width: 100%;
+        max-width: 90%;
+    }
+}
+@media (max-width: 768px) {
+    .contact .container {
+        width: 100%;
+        max-width: 90%;
+    }
+    .contactBar{
+        width: 100%;
+    }
+}
+
+/* General Styling */
+.contactOnlyinMobile {
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.75); /* Adjusted Opacity */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 100%;
+    width: 100%;
+    margin: auto;
+    margin-bottom: -3rem;
+}
+
+.contactOnlyinMobile h1 {
+    font-size: 25px !important;
+    color: #ec8f84;
+    margin-bottom: 10px;
+    align-items: center;
+    gap: 8px;
+    font-family: "Wire one", sans-serif;
+}
+
+
+.contactOnlyinMobile ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.contactOnlyinMobile .indent {
+    font-size: 1rem;
+    color: #ffffff;
+    font-family: "Public Sans", sans-serif;
+    padding-left: 2rem;
+}
+
+/* Responsive Grid */
+#contactOnlyinMobile .row {
+
+    gap: 15px;
+    text-align: left;
+}
+#contactOnlyinMobile .bi{
+    color: #ec8f84;
+}
+
+/* Mobile-specific styling */
+@media (max-width: 600px) {
+    .contactOnlyinMobile {
+        width: 100%;
+    }
+
+    .contactOnlyinMobile h1 {
+        font-size: 1rem;
+    }
+    
+    .contactOnlyinMobile .indent {
+        font-size: 0.9rem;
     }
 }
