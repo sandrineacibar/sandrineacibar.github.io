@@ -156,13 +156,12 @@ body {
   nav a:hover{
     text-decoration:  #b36d69 3px;
     color: #b36d69;
-    padding-bottom: 5px;
+    padding-bottom: 3px;
     border-bottom: #ec0606 2px solid;
   }
-  
-  
   nav li:first-child{
     margin-right: auto;
+    padding: 0;
    }
    @media (max-width: 768px) {
   nav li:first-child{
@@ -273,9 +272,9 @@ body {
 
 /* Name and titles */
 .colsecond h1 {
-  font-size: 35px;
+  font-size: 33px;
   font-family: "Tangerine", sans-serif;
-  font-weight: 400;
+  font-weight: 600;
   color: #ec8f84;
   margin: 0;
   transition: all 0.3s ease-in-out; /* Smooth transition */

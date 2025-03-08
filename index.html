@@ -52,7 +52,7 @@
                                 <li><a href="contact.html">Contact</a></li>
 
                             </ul>
-                            <ul> 
+                            <ul class="navTopBar"> 
                                 <li class="grey-qo-regular navTitle"><a href="portfolio.html"><span class="my"> My</span> <span class="port"> Portfolio</span><span class="period">.</span></a></li>
                                 <li class="hideOnMobile"><a href="#home">Home</a></li>
                                 <li class="hideOnMobile"><a href="#about">About</a></li>
@@ -94,7 +94,7 @@
                             <div class="row">
                                 <div class="col-md-6 aboutText">
                                     <h1>About Me <i class="bi bi-bookmark-heart"></i></h1>
-                                    <p>Hello! My is <span class="name">Sandrine Mae Acibar</span>. I am a dedicated college student specializing in Information Systems, passionate about driving process improvement and delivering innovative solutions. With a strong blend of technical expertise and creative problem-solving, I bridge the gap between technology and practical applications. My skills in Graphic Design, Front-End Development, Video Editing, and System Analysis allow me to approach projects from different perspectives and ensure smooth execution.</p>
+                                    <p>Hello! My name is <span class="name">Sandrine Mae Acibar</span>. I am a dedicated college student specializing in Information Systems, passionate about driving process improvement and delivering innovative solutions. With a strong blend of technical expertise and creative problem-solving, I bridge the gap between technology and practical applications. My skills in Graphic Design, Front-End Development, Video Editing, and System Analysis allow me to approach projects from different perspectives and ensure smooth execution.</p>
                                     <a href="https://drive.google.com/uc?id=1-s6LVX9LahGk9PT3mPOlGVDNRkMrhB5T&export=download" class="btn">
                                       <i class="bi bi-download"></i> Download My CV
                                   </a>
@@ -357,7 +357,7 @@
               };
             });
 
-        // Splash Screen
+       // Splash Screen
 let intro = document.querySelector(".intro");
 let logo = document.querySelector(".logo-header");
 let logoSpan = document.querySelectorAll(".logo");
@@ -383,11 +383,14 @@ window.addEventListener("DOMContentLoaded", () => {
 
       setTimeout(() => {
         intro.style.top = "-100vh"; // Hide splash screen
+        setTimeout(() => {
+          intro.style.display = "none"; // Remove from DOM
+        }, 500);
       }, 2300);
 
       // Store in localStorage to prevent showing again
       localStorage.setItem("splashShown", "true");
-    });
+    }, 100); // Added slight delay to ensure smooth execution
   } else {
     // Hide splash screen instantly if already shown
     intro.style.display = "none";

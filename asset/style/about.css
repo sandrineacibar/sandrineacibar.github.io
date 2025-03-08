@@ -101,7 +101,7 @@
 .aboutPhoto img {
     width: 320px;
     height: auto;
-    border-radius: 10px;
+    border-radius: none;
     border: 5px solid rgba(255, 255, 255, 0.1);
     transition: border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
