@@ -159,13 +159,22 @@ body {
     padding-bottom: 3px;
     border-bottom: #ec0606 2px solid;
   }
+  nav li:first-child a:hover{
+    color: #ec0606;
+    transform: scale(1.07);
+    border-bottom: none;
+  }
+
+  
   nav li:first-child{
     margin-right: auto;
-    padding: 0;
+    margin-left: 3rem;
+
    }
    @media (max-width: 768px) {
   nav li:first-child{
       font-size: 35px;
+      margin-left: 0;
     }
    }
 
